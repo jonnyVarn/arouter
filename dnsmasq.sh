@@ -1,7 +1,7 @@
 #!/bin/sh
 
 apt install dnsmasq -y
-systemctl add dnsmasq
+systemctl enable dnsmasq
 
 echo "interface=eth1" >/etc/dnsmasq.conf 
 echo "except-interface=eth0" >> /etc/dnsmasq.conf
