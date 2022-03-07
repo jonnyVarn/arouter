@@ -1,7 +1,7 @@
-#!/bin/ash
+#!/bin/sh
 
-apk add dnsmasq
-rc-update add dnsmasq
+apt install dnsmasq -y
+systemctl add dnsmasq
 
 echo "interface=eth1" >/etc/dnsmasq.conf 
 echo "except-interface=eth0" >> /etc/dnsmasq.conf
