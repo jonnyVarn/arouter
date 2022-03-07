@@ -1,9 +1,9 @@
-!# /bin/ash
+#! /bin/ash
+brctl addbr br0
 echo "auto eth0" > /etc/network/interfaces 
 echo "iface eth0 inet dhcp" >> /etc/network/interfaces
 echo "auto eth1" >> /etc/network/interfaces
 echo "iface eth1 inet static" >> /etc/network/interfaces
-echo " >> /etc/network/interfaces
 echo "auto br0 inet static" >> /etc/network/interfaces
 echo "    pre-up ifconfig eth1 up" >> /etc/network/interfaces
 echo "    bridge-ports eth1 wlan0" >> /etc/network/interfaces
