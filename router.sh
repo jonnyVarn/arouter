@@ -1,4 +1,4 @@
 #! /bin/ash
 echo "arouter" >/etc/hostname
-apk add iptables acf-iptables dnsmasq acf-dnsmasq openvpn acf-openvpn openrc
+apk add iptables acf-iptables dnsmasq acf-dnsmasq openvpn acf-openvpn openrc bridge
 setup-acf
