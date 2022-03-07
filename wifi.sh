@@ -1,4 +1,5 @@
 #! /bin/sh
+apt install hostapd -y
 echo "interface=wlan0" >/etc/hostapd.conf
 echo "bridge=br0" >>/etc/hostapd.conf
 echo "hw_mode=n" >>/etc/hostapd.conf
