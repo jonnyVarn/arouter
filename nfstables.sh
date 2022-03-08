@@ -3,10 +3,10 @@
 flush ruleset
 
 # Our future selves will thank us for noting what cable goes where and labeling the relevant network interfaces if it isn't already done out-of-the-box.
-define WANL = eth0 # eth0
-define LAN = br0 # eth1 wlan0
+define WANLINK = eth0 # eth0
+define LANLINK = br0 # eth1 wlan0
 
-define PORTFORWARDS = { ssh, http, https }
+define PORTFORWARDS = { http, https }
 
 # We never expect to see the following address ranges on the Internet
 define BOGONS4 = { 0.0.0.0/8, 10.0.0.0/8, 10.64.0.0/10, 127.0.0.0/8, 127.0.53.53, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.168.0.0/16, 198.18.0.0/15, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 240.0.0.0/4, 255.255.255.255/32 }
