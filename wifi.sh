@@ -15,5 +15,8 @@ echo "rsn_pairwise=CCMP" >>/etc/hostapd/hostapd.conf
 echo "ssid=arouter" >>/etc/hostapd/hostapd.conf
 echo "wpa_passphrase=password" >>/etc/hostapd/hostapd.conf
 
+systemctl unmask hostapd
+systemctl enable hostapd
+systemctl start hostapd
 
 
