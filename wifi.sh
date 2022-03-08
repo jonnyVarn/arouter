@@ -3,6 +3,7 @@ apt install hostapd -y
 echo "interface=wlan0" >/etc/hostapd/hostapd.conf
 echo "bridge=br0" >>/etc/hostapd/hostapd.conf
 echo "hw_mode=g" >>/etc/hostapd/hostapd.conf
+echo "country_code=SE" >>/etc/hostapd/hostapd.conf
 echo "channel=1" >>/etc/hostapd/hostapd.conf
 echo "wmm_enabled=0" >>/etc/hostapd/hostapd.conf
 echo "macaddr_acl=0" >>/etc/hostapd/hostapd.conf
